@@ -7,7 +7,7 @@ and use it with IntelliJ/Eclipse/IDE of their choice.
 The tool can be installed in the following way. Please note the installation is targeted currently for MacOS/Linux users
 
 ```
-$ mkdir ~/app
+$ mkdir $HOME/app
 $ curl https://repo1.maven.org/maven2/org/foundweekends/giter8/giter8-bootstrap_2.12/0.16.2/giter8-bootstrap_2.12-0.16.2.sh > ~/app/giter8/bin/g8
 $ chmod +x ~/app/giter8/bin/g8
 // Setup project as follows:
