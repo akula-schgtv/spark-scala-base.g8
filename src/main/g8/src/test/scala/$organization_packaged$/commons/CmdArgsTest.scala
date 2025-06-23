@@ -1,1 +1,1 @@
-package $organization$
+package $organization$.commons
