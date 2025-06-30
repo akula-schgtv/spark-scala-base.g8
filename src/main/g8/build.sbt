@@ -29,7 +29,6 @@ lazy val root = (project in file("."))
       "org.apache.spark" %% "spark-mllib" % sparkVersion % Provided,
       "org.apache.spark" %% "spark-avro" % sparkVersion % Provided,
       "org.apache.spark" %% "spark-protobuf" % sparkVersion % Provided,
-      "com.google.cloud.spark" %% "spark-bigquery-with-dependencies" % "0.42.4" % Provided,
       "org.rogach" %% "scallop" % "5.2.0",
       "com.typesafe" % "config" % "1.4.3",
       "org.scalatest" %% "scalatest" % "3.2.19" % Test
