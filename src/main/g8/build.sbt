@@ -11,7 +11,7 @@ lazy val commonSettings = Seq(
     "-unchecked",
     "-language:postfixOps"
   ),
-  checksums in update := Nil
+  update / checksums := Nil
 )
 
 lazy val root = (project in file("."))
@@ -25,11 +25,16 @@ lazy val root = (project in file("."))
       "org.apache.spark" %% "spark-core" % sparkVersion % Provided,
       "org.apache.spark" %% "spark-sql" % sparkVersion % Provided,
       "org.apache.spark" %% "spark-hive" % sparkVersion % Provided,
+      "org.apache.spark" %% "spark-streaming" % sparkVersion % Provided,
+      "org.apache.spark" %% "spark-mllib" % sparkVersion % Provided,
+      "org.apache.spark" %% "spark-avro" % sparkVersion % Provided,
+      "org.apache.spark" %% "spark-protobuf" % sparkVersion % Provided,
+      "com.google.cloud.spark" %% "spark-bigquery-with-dependencies" % "0.42.4" % Provided,
       "org.rogach" %% "scallop" % "5.2.0",
       "com.typesafe" % "config" % "1.4.3",
       "org.scalatest" %% "scalatest" % "3.2.19" % Test
     ),
-    parallelExecution in Test := false,
+    Test / parallelExecution := false,
 
     assembly / mainClass := Some("$organization$.$classname$"),
 
